@@ -5,11 +5,7 @@ public class SalesEmployee extends Employee {
 	private double netSalary;
 	private double commision;
 	public SalesEmployee(Integer sales,Integer empId, String name, double salary, Address address) {
-		super();
-		setEmpId(empId);
-		setName(name);
-		setSalary(salary);
-		setAddress(address);
+		super(empId,name,salary,address);
 		this.sales = sales;
 		calculateSalary();
 	}
